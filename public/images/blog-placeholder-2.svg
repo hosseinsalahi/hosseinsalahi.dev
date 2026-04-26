@@ -1,0 +1,7 @@
+<svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" fill="#0f172a"/>
+  <circle cx="400" cy="200" r="150" stroke="#4e5eff" stroke-width="2" stroke-dasharray="10 10"/>
+  <circle cx="400" cy="200" r="100" stroke="#4e5eff" stroke-width="2"/>
+  <path d="M300 200L500 200M400 100L400 300" stroke="#4e5eff" stroke-width="2" opacity="0.5"/>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-family="system-ui" font-size="32" font-weight="bold">KubeCon EU 2026</text>
+</svg>

@@ -1,11 +1,80 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+export const prerender = true;
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Hossein Salahi | Software Engineer">
+	<section class="hero">
+		<h1>Hossein Salahi</h1>
+		<p class="subtitle">
+			Software Engineer focused on building fast, scalable, and modern applications.
+		</p>
+		<div class="cta">
+			<a href="/blog" class="button">Read Blog</a>
+			<a href="/projects" class="button secondary">View Projects</a>
+		</div>
+	</section>
 </Layout>
+
+<style>
+	.hero {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: 50vh;
+		text-align: center;
+	}
+
+	h1 {
+		font-size: 4rem;
+		margin-bottom: 1rem;
+		color: var(--text);
+	}
+
+	.subtitle {
+		font-size: 1.5rem;
+		color: var(--secondary);
+		margin-bottom: 2rem;
+	}
+
+	.cta {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+	}
+
+	.button {
+		display: inline-block;
+		padding: 0.8rem 1.8rem;
+		border-radius: 8px;
+		background: var(--accent);
+		color: white;
+		text-decoration: none;
+		font-weight: 600;
+		transition: transform 0.2s, background 0.2s;
+	}
+
+	.button:hover {
+		transform: translateY(-2px);
+		background: #1a2adb;
+	}
+
+	.button.secondary {
+		background: var(--accent-light);
+		color: var(--accent);
+	}
+
+	.button.secondary:hover {
+		background: #d1dbff;
+	}
+
+	@media (max-width: 600px) {
+		h1 {
+			font-size: 2.5rem;
+		}
+		.subtitle {
+			font-size: 1.2rem;
+		}
+	}
+</style>
